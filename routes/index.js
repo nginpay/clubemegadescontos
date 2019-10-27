@@ -26,8 +26,6 @@ router.post('/api/usuario/login', function(req, res, next) {
   if(req.body.user === 'paulotozzi' && req.body.pwd === '123456'){
     //auth ok
     const id = 1; //esse id viria do banco de dados
-    var token = jwt.sign({ id }, process.env.SECRET, {
-      expiresIn: 300 // expires in 5min
     });
     res.status(200).send({ 
       username: "paulotozzi",
