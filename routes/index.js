@@ -23,7 +23,7 @@ router.put('/api/usuario/ativar/', function(req, res, next) {
 
 /* GET home api. */
 router.post('/api/usuario/login', function(req, res, next) {
-  response.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.json({ 
     username: "paulotozzi",
     password: "123456",
