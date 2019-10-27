@@ -31,6 +31,10 @@ router.post('/api/usuario/login', function(req, res, next) {
     mobile: "19984442281",
     cpf: "19171708820"
                });
+    }
+
+    res.status(500).send('Login inválido!');
+  })
 });
 
 /* GET home api. */
