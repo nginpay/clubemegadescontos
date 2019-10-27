@@ -21,9 +21,9 @@ router.put('/api/usuario/ativar/', function(req, res, next) {
   res.json({ message: 'Ativa usuário para poder usar aplicação mobile' });
 });
 
-/* GET home api. */
+
 router.post('/api/usuario/login', function(req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  if(req.body.username === 'paulotozzi' && req.body.password === '123456'){
   res.json({ 
     username: "paulotozzi",
     password: "123456",
