@@ -22,8 +22,14 @@ router.put('/api/usuario/ativar/', function(req, res, next) {
 });
 
 /* GET home api. */
-router.post('/api/usuario/logar', function(req, res, next) {
-  res.json({ message: 'Permite a conexão do usuário, gerando um access_token ' });
+router.post('/api/usuario/login', function(req, res, next) {
+  res.json({ 
+    username: "paulotozzi",
+    password: "123456",
+    digicard: "0000111122223333",
+    mobile: "19984442281",
+    cpf: "19171708820"
+               });
 });
 
 /* GET home api. */
@@ -32,7 +38,7 @@ router.get('/api/usuario/cartaovirtual', function(req, res, next) {
 });
 
 /* GET home api. */
-router.get('/api/usuario/perfil/alterar', function(req, res, next) {
+router.put('/api/usuario/perfil/alterar', function(req, res, next) {
   res.json({ message: 'Permite alteração dos dados do usuário' });
 });
 
