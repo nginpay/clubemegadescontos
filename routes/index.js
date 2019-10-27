@@ -23,18 +23,22 @@ router.put('/api/usuario/ativar/', function(req, res, next) {
 
 
 router.post('/api/usuario/login', function(req, res, next) {
-  if(req.body.username === 'paulotozzi' && req.body.password === '123456'){
-  res.json({ 
-    username: "paulotozzi",
-    password: "123456",
-    digicard: "0000111122223333",
-    mobile: "19984442281",
-    cpf: "19171708820"
-               });
-    }
-
-    res.status(500).send('Login inválido!');
-  })
+  if(req.body.user === 'luiz' && req.body.pwd === '123'){
+    //auth ok
+    const id = 1; //esse id viria do banco de dados
+    var token = jwt.sign({ id }, process.env.SECRET, {
+      expiresIn: 300 // expires in 5min
+    });
+    res.status(200).send({ 
+      username: "paulotozzi",
+      password: "123456",
+      digicard: "0000111122223333",
+      mobile: "19984442281",
+      cpf: "19171708820"
+     });
+  }
+  
+  res.status(500).send('Login inválido!');
 });
 
 /* GET home api. */
