@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'APP Clubemegadescontos' });
+  res.render('index', { title: 'Clubemegadescontos' });
 });
 
 module.exports = router;
