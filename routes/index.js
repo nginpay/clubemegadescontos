@@ -6,4 +6,15 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Clubemegadescontos' });
 });
 
+/* GET dashboard home page. */
+router.get('/', function(req, res, next) {
+  res.render('dashboard', { title: 'Dashboard App' });
+});
+
+/* GET API home page. */
+router.get('/api', function(req, res, next) {
+  res.render({ title: 'Api Rest' });
+});
+
+
 module.exports = router;
