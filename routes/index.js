@@ -13,7 +13,7 @@ router.get('/dashboard', function(req, res, next) {
 
 /* GET API home page. */
 router.get('/api', function(req, res, next) {
-  res.render({ title: 'Api Rest' });
+  res.json({ title: 'Api Rest' });
 });
 
 
