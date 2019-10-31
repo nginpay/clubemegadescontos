@@ -8,9 +8,13 @@ router.get('/', function(req, res, next) {
 
 /* GET login dashboard. */
 router.get('/login', function(req, res, next) {
-  res.render('./dashboard/login', { title: 'Dashboard' });
+  res.render('./dashboard/login', { title: 'Login' });
 });
 
+/* GET login dashboard. */
+router.get('/register', function(req, res, next) {
+  res.render('./dashboard/register', { title: 'Register' });
+});
 /* GET home dashboard. */
 router.get('/dashboard', function(req, res, next) {
   res.render('./dashboard/index', { title: 'Dashboard' });
