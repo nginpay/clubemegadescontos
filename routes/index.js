@@ -7,12 +7,12 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET home page. */
-router.get('/dashboard', function(req, res, next) {
-  res.render('home', { title: 'Dashboard' });
+router.get('/v1/dashboard', function(req, res, next) {
+  res.render('./dashboard/index', { title: 'Dashboard' });
 });
 
 /* GET Api page. */
-router.get('/api', function(req, res, next) {
+router.get('/v2/api', function(req, res, next) {
   res.json({ title: 'API v2' });
 });
 
