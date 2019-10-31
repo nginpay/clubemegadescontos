@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET dashboard home page. */
-router.get('/', function(req, res, next) {
+router.get('/dashboard', function(req, res, next) {
   res.render('dashboard', { title: 'Dashboard App' });
 });
 
