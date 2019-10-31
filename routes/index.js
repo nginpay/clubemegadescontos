@@ -22,4 +22,10 @@ router.get('/api', function(req, res, next) {
   res.json({ title: 'API v2' });
 });
 
+/* GET Api documentation home. */
+router.get('/api/docs', function(req, res, next) {
+  res.json({ title: 'API v2' });
+});
+
+
 module.exports = router;

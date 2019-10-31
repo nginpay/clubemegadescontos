@@ -6,7 +6,9 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+var swaggerUi =  require ( ' swagger-ui-express ' ),
+    swaggerDocument =  require ( ' ./swagger.json ' );
+    
 var app = express();
 
 // view engine setup
@@ -38,4 +40,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+app.use('/api/v1', router);
 module.exports = app;
