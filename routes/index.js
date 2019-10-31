@@ -20,6 +20,10 @@ router.get('/dashboard', function(req, res, next) {
   res.render('./dashboard/index', { title: 'Dashboard' });
 });
 
+/* GET home dashboard. */
+router.get('/dashboard/rede', function(req, res, next) {
+  res.render('./dashboard/rede', { title: 'Dashboard' });
+});
 
 /* GET Api page. */
 router.get('/api', function(req, res, next) {
