@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /* GET home page. */
 router.get('/dashboard', function(req, res, next) {
-  res.render('./dashboard/index', { title: 'Dashboard' });
+  res.render('./dashboard/login', { title: 'Dashboard' });
 });
 
 /* GET Api page. */
