@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- /.website title -->
+<title>MegaDescontos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="imagem/png" href="../images/icon.jpg" />
+<!-- CSS Files -->
+<link href="./stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="./stylesheets/font-awesome.min.css" rel="stylesheet">
+<link href="./fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+<link href="./stylesheets/animate.css" rel="stylesheet" media="screen">
+<link href="./stylesheets/owl.theme.css" rel="stylesheet">
+<link href="./stylesheets/owl.carousel.css" rel="stylesheet">
+ 
+<link href="./stylesheets/styles.css" rel="stylesheet" media="screen">    
+
+<!-- Google Fonts --> 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
+</head>
+  
+<body data-spy="scroll" data-target="#navbar-scroll" >
+ 
+ <div id="top"></div>
+
+<!-- /.parallax full screen background image -->
+<div class="fullscreen landing parallax" style="background-image:url('./images/bg-header.jpg');" data-img-width="2000" data-img-height="1325" data-diff="100">
+	
+	<div class="overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+				 
+						<!-- /.main title -->
+						<h1 class="wow fadeInRight">
+							<img src="./images/logo.png" alt="logo" width="250" height="auto"> 
+						</h1>
+
+					<!-- /.header paragraph -->
+					<div class="landing-text wow fadeInRight">
+						<p>Seu desconto de bolso!</p>
+					</div>				  
+
+					<!-- /.header button -->
+					<div class="head-btn wow fadeInRight">
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalProfissional">
+									Quero Descontos
+							</button>
+
+							<!--
+						<a href="#" onclick="funcao1()" class="btn-primary">Anunciar</a>
+						<a href="#" onclick="funcao1()" class="btn-default">Contratar</a>
+						-->
+					</div>
+	
+					<!-- /.phone option -->
+					<div class="more wow fadeInRight">
+						<p>Disponivel para:
+						<a href="#download" onclick="funcao1()" class="btn option"><i class="fa fa-apple"></i>iOS</a>
+						<a href="#download" onclick="funcao1()" class="btn option"><i class="fa fa-android"></i>Android</a>
+						</p>
+					</div>			  
+
+				</div> 
+				
+				<!-- /.phone image -->
+				<div class="col-md-6">
+				<img src="./images/header-phone.png" alt="phone" class="header-phone img-responsive wow fadeInLeft">
+				</div>
+				
+				
+				
+			</div>
+		</div> 
+	</div> 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalProfissional" tabindex="-1" role="dialog" aria-labelledby="modalProfissional" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+		<div class="modal-body">
+				<h1>Cadastro Usuário</h1>
+					<form method="post" action="/addprofissional">
+					<div class="form-group">
+					  <input type="text" class="form-control" name="Nome" placeholder="Seu nome..." required>
+					</div>
+					<div class="form-group">
+					  <input type="text" class="form-control" name="Email" placeholder="Seu email..." required>
+					 </div>
+					 <div class="form-group">
+					  <input type="text" class="form-control" name="Celular" placeholder="Numero de Celular..." required>
+					 </div>
+					 <div class="form-group">
+					  <input type="text" class="form-control" name="Cidade" placeholder="Cidade onde Mora..." required>
+					 </div>
+					  <button type="submit" class="btn btn-secondary">Salvar</button>
+					</form>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <!-- Modal -->
+<div class="modal fade" id="modalContratante" tabindex="-1" role="dialog" aria-labelledby="modalContratante" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-body">
+					<h1>Cadastro Contratante</h1>
+						<form method="post" action="/addcontratante">
+						<div class="form-group">
+						  <input type="text" class="form-control" name="Nome" placeholder="Seu nome..." required>
+						</div>
+						<div class="form-group">
+						  <input type="text" class="form-control" name="Email" placeholder="Seu email..." required>
+						 </div>
+						 <div class="form-group">
+						  <input type="text" class="form-control" name="Celular" placeholder="Numero de Celular..." required>
+						 </div>
+						 <div class="form-group">
+						  <input type="text" class="form-control" name="Cidade" placeholder="Cidade onde Mora..." required>
+						 </div>
+						 <button type="submit" class="btn btn-secondary">Salvar</button>
+						</form>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<script>
+		function funcao1()
+		{
+			alert("OPS! Ainda não estamos prontos. Mas deixe seu email e prometo que entramos em contato assim que estivermos prontos!!");
+		}
+	</script>	
+	<!-- /.javascript files -->
+    <script src="./javascripts/jquery.js"></script>
+    <script src="./javascripts//bootstrap.min.js"></script>
+    <script src="./javascripts//custom.js"></script>
+    <script src="./javascripts//jquery.sticky.js"></script>
+	<script src="./javascripts//wow.min.js"></script>
+	<script src="./javascripts//owl.carousel.min.js"></script>
+	<script src="./javascripts//ekko-lightbox-min.js"></script>
+	<script type="text/javascript">
+	$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) { event.preventDefault(); $(this).ekkoLightbox(); }); 
+	</script>
+	<script>
+		new WOW().init();
+	</script>
+  </body>
+</html>
